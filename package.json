@@ -1,16 +1,16 @@
 {
-  "name": "generator-react-sdp",
+  "name": "generator-react-jspmio",
   "version": "0.0.3",
   "description": "Yeoman generator for ReactJS",
   "license": "MIT",
   "main": "app/index.js",
-  "homepage": "https://github.com/jaylaw81/generator-react-sdp",
+  "homepage": "https://github.com/jaylaw81/generator-react-jspm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaylaw81/generator-react-sdp.git"
+    "url": "https://github.com/jaylaw81/generator-react-jspm.git"
   },
   "bugs": {
-    "url": "https://github.com/jaylaw81/generator-react-sdp/issues"
+    "url": "https://github.com/jaylaw81/generator-react-jspm/issues"
   },
   "author": {
     "name": "Jason Law",

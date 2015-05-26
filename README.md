@@ -1,4 +1,4 @@
-# generator-react-express
+# generator-react-jspmio
 
 > [Yeoman](http://yeoman.io) generator for [React](http://facebook.github.io/react/) and [JSPM](http://jspm.io/)
 
@@ -10,13 +10,13 @@ Simple component generator for ReactJS + JSPM.
 Install the generator:
 
 ```bash
-npm install -g generator-react-sdp
+npm install -g generator-react-jspmio
 ```
 
 Then run the generator:
 
 ```bash
-yo react-sdp
+yo react-jspmio
 ```
 
 ... and follow the prompts.
