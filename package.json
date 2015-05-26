@@ -1,0 +1,42 @@
+{
+  "name": "generator-react-sdp",
+  "version": "0.0.1",
+  "description": "Yeoman generator for ReactJS",
+  "license": "MIT",
+  "main": "app/index.js",
+  "homepage": "https://github.com/jaylaw81/generator-react-sdp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaylaw81/generator-react-sdp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaylaw81/generator-react-sdp/issues"
+  },
+  "author": {
+    "name": "Jason Law",
+    "url": "https://github.com/jaylaw81"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "react"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "yeoman-generator": "^0.18.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "<%= componentName %>",
+  "version": "0.0.0",
+  "private": true,
+  "description": "<%= componentName %>",
+  "main": "server.js",
+  "dependencies": {
+    "css": "github:systemjs/plugin-css@^0.1.10",
+    "fetch": "npm:whatwg-fetch@^0.7.0",
+    "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
+    "react": "npm:react@^0.13.1"
+  },
+  "devDependencies": {
+    "babel": "npm:babel-core@^5.0.12",
+    "babel-runtime": "npm:babel-runtime@^5.0.12",
+    "core-js": "npm:core-js@^0.8.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"no tests yet\" && exit 0"
+  }
+}
