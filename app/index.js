@@ -20,7 +20,8 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 			type: 'input',
 			name: 'projectName',
 			message: 'What is the name of your project?',
-			default: 'CGSDP'
+			store: true,
+			default: 'MyApp'
 		},
 		{
 			type: 'input',
@@ -35,6 +36,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 			choices: [
 			  "jspm", "npm", "github", "stash"
 			],
+			store: true,
 			default: "JSPM"
 		  }
 		];
