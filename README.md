@@ -1,8 +1,8 @@
 # generator-react-express
 
-> [Yeoman](http://yeoman.io) generator for [React](http://facebook.github.io/react/) and [express](http://expressjs.com/)
+> [Yeoman](http://yeoman.io) generator for [React](http://facebook.github.io/react/) and [JSPM](http://jspm.io/)
 
-Builds a simple project to help you get started with React on the client, express for the server and browserify to pull it all together.
+Simple component generator for ReactJS + JSPM.
 
 
 ## Getting Started
@@ -10,13 +10,13 @@ Builds a simple project to help you get started with React on the client, expres
 Install the generator:
 
 ```bash
-npm install -g generator-react-express
+npm install -g generator-react-sdp
 ```
 
 Then run the generator:
 
 ```bash
-yo react-express
+yo react-sdp
 ```
 
 ... and follow the prompts.
@@ -25,8 +25,3 @@ yo react-express
 ## Feedback?
 
 I'd love to hear it. Open an issue or submit a PR.
-
-
-## License
-
-MIT
