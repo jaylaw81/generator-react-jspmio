@@ -1,6 +1,6 @@
 {
   "name": "generator-react-sdp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman generator for ReactJS",
   "license": "MIT",
   "main": "app/index.js",
