@@ -19,7 +19,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 		{
 			type: 'input',
 			name: 'projectName',
-			message: 'What is the name of your project?',
+			message: 'What is the name of the project?',
 			store: true,
 			default: 'MyApp'
 		},
@@ -27,18 +27,9 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 			type: 'input',
 			name: 'componentName',
 			message: 'What is the name of the component?',
-			default: 'NewComponent'
-		},
-		{
-			type: "list",
-			name: "repoType",
-			message: "Which package manager would you like to use?",
-			choices: [
-			  "jspm", "npm", "github", "stash"
-			],
 			store: true,
-			default: "JSPM"
-		  }
+			default: 'NewComponent'
+		}
 		];
 
 		this.prompt(prompts, function (props) {
@@ -54,23 +45,31 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 
 	writing: {
 		project: function () {
-			this.template('client/jspm_packages/stash/'+this.projectName+'/base/_package.json', 'jspm_packages/'+this.repoType+'/'+this.projectName+'/'+ this.componentKey +'/package.json');
+			this.template('client/base/_package.json', 'package.json');
+			this.template('client/base/_config.js', 'config.js');
+			this.template('client/base/.gitignore', '.gitignore');
 		},
 
 		clientfiles: function() {
-			this.template('client/jspm_packages/stash/CGSDP/base/css/_style.scss', 'jspm_packages/'+this.repoType+'/'+this.projectName+'/'+ this.componentKey +'/css/_style.scss');
-			this.template('client/jspm_packages/stash/CGSDP/base/_.jspm.json', 'jspm_packages/'+this.repoType+'/'+this.projectName+'/'+ this.componentKey +'/.jspm.json');
-			this.template('client/jspm_packages/stash/CGSDP/_index.js', 'jspm_packages/'+this.repoType+'/'+this.projectName+'/'+ this.componentKey +'.js');
-			this.directory('client/jspm_packages/stash/CGSDP/base/lib', 'jspm_packages/'+this.repoType+'/'+this.projectName+'/'+ this.componentKey +'/lib');
-
+			this.template('client/base/css/_style.scss', 'lib/css/_style.scss');
+			this.template('client/base/lib/_main.js', 'lib/main.js');
+			this.template('client/_index.js', 'index.js');
 		}
 	},
 
 	install: function () {
-		this.npmInstall();
+		//this.npmInstall();
 	},
 
 	end: function() {
+		/*
+		this.spawnCommand('jspm', ['install']);
+		if(this.repoType == 'stash'){
+			this.spawnCommand('jspm', ['registry create stash jspm-git']);
+			this.spawnCommand('jspm', ['registry config stash']);
+			this.spawnCommand('jspm', ['install stash:' + this.projectName +'/' + this.componentKey]);
+		}
+		*/
 		var chdir = this.createDirectory ? '"cd ' + this.componentKey + '" then ' : '';
 		this.log(
 			'\n' + chalk.green.underline('Your new React Component is ready!')

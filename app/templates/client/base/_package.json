@@ -1,0 +1,29 @@
+{
+  "name": "<%= componentName %>",
+  "version": "0.0.0",
+  "private": true,
+  "description": "<%= componentName %>",
+  "main": "server.js",
+  "jspm": {
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.10",
+      "fetch": "npm:whatwg-fetch@^0.7.0",
+      "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
+      "react": "npm:react@^0.13.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.0.12",
+      "babel-runtime": "npm:babel-runtime@^5.0.12",
+      "core-js": "npm:core-js@^0.8.1"
+    }
+  },
+
+  "devDependencies": {
+    "watch": "^0.16.0",
+    "jspm": "^0.15.6",
+    "jspm-git": "^0.3.2",
+    "babel-eslint": "^3.1.7",
+    "eslint": "^0.20.0",
+    "eslint-plugin-react": "^2.3.0"
+  }
+}
