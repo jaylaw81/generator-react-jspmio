@@ -4,7 +4,6 @@
 
 Simple component generator for ReactJS + JSPM.
 
-
 ## Getting Started
 
 Install the generator:
