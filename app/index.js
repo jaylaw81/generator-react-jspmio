@@ -53,6 +53,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 		clientfiles: function() {
 			this.template('client/base/css/_style.scss', 'lib/css/_style.scss');
 			this.template('client/base/lib/_main.js', 'lib/main.js');
+			this.template('client/base/__tests__/_test.js', '__tests__/'+this.componentKey+'-test.js');
 			this.template('client/_index.js', 'index.js');
 		}
 	},
