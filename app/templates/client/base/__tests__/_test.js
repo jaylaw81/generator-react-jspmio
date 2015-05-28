@@ -1,12 +1,23 @@
-// __tests__/sum-test.js
+// __tests__/<%= componentKey %>-test.js
 // Jest Unit Test for <%= componentName %>
 //
 
-jest.dontMock('../lib/main.js');
+jest.dontMock('../lib/main');
 
-describe('<%= componentName %>', function() {
- it('What should this component do', function() {
-   var <%= componentName %> = require('../lib/main.js');
-   // Expect some result: expect(<%= componentName %>);
- });
+import React from 'react/addons';
+import NewComponent from '../lib/main';
+var TestUtils = React.addons.TestUtils;
+
+describe('<%= componentName %>', () => {
+
+  it('should do something goes here', () => {
+
+    // Render a checkbox with label in the document
+    var checkbox = TestUtils.renderIntoDocument(
+      <<%= componentName %>/>
+    );
+
+  });
+
 });
+

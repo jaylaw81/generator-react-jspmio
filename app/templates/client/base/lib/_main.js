@@ -1,8 +1,16 @@
 import React from 'react';
-import './css/style.css!';
 
-var <%= componentName %> = function(){
-    React.render('<<%= componentName %> />', document.getElementById('<%= componentName %>'));
+class <%= componentName %> extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <<%= componentName %> />
+    );
+  }
 }
 
-export { <%= componentName %> }
+export default <%= componentName %>;
