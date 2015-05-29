@@ -2,7 +2,7 @@
 
 > [Yeoman](http://yeoman.io) generator for [React](http://facebook.github.io/react/) and [JSPM](http://jspm.io/)
 
-Simple component generator for ReactJS + JSPM.
+Simple component generator for ReactJS + JSPM + JEST.
 
 ## Getting Started
 
@@ -16,6 +16,14 @@ Then run the generator:
 
 ```bash
 yo react-jspmio
+```
+
+## Running a JEST test
+
+Tests are located in `__tests__` directory
+
+```bash
+npm test
 ```
 
 ... and follow the prompts.

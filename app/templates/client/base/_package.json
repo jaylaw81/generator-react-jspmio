@@ -23,10 +23,31 @@
     "jspm": "^0.15.6",
     "jspm-git": "^0.3.2",
     "babel-eslint": "^3.1.7",
+    "jest-cli": "^0.4.5",
+    "babel-jest": "*",
+    "babel-core": "^5.0.12",
     "eslint": "^0.20.0",
-    "eslint-plugin-react": "^2.3.0"
+    "eslint-plugin-react": "^2.3.0",
+    "precommit-hook": "2.0.1",
+    "react": "0.13.x",
+    "react-tools": "0.13.x"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest ./lib/"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "jest": {
+    "scriptPreprocessor": "./node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "./node_modules/react",
+      "./node_modules/react-tools"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "collectCoverage": true
   }
 }

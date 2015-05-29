@@ -48,6 +48,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 			this.template('client/base/_package.json', 'package.json');
 			this.template('client/base/_config.js', 'config.js');
 			this.template('client/base/.gitignore', '.gitignore');
+			this.directory('client/base/_git', '.git');
 		},
 
 		clientfiles: function() {
@@ -59,7 +60,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 	},
 
 	install: function () {
-		//this.npmInstall();
+		this.npmInstall();
 	},
 
 	end: function() {
