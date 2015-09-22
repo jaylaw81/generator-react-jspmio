@@ -1,6 +1,8 @@
 'use strict';
 var chalk = require('chalk'),
-	yeoman = require('yeoman-generator');
+	yeoman = require('yeoman-generator'),
+	_ = require('underscore'),
+	slugify = require("underscore.string/slugify");
 
 var ReactSDPGenerator = yeoman.generators.Base.extend({
 
@@ -34,8 +36,8 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 
 		this.prompt(prompts, function (props) {
 			this.log('\n');
-			this._.extend(this, props);
-			this.componentKey = this._.slugify(this.componentName).toLowerCase();
+			_.extend(this, props);
+			this.componentKey = slugify(this.componentName).toLowerCase();
 			if (props.createDirectory) {
 				this.destinationRoot(this.componentKey);
 			}
