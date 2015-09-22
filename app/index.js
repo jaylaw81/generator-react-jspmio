@@ -14,7 +14,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 		var done = this.async();
 
 		this.log(
-			'\n' + chalk.bold.underline('Welcome to the React SDP Component Generator')
+			'\n' + chalk.bold.underline('Welcome to the React JSPM.IO Component Generator')
 		);
 
 		var prompts = [
