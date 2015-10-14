@@ -49,7 +49,7 @@ var ReactSDPGenerator = yeoman.generators.Base.extend({
 		project: function () {
 			this.template('client/base/_package.json', 'package.json');
 			this.template('client/base/_config.js', 'config.js');
-			this.template('client/base/.gitignore', '.gitignore');
+			this.template('client/base/_.gitignore', '.gitignore');
 			this.directory('client/base/_git', '.git');
 		},
 
