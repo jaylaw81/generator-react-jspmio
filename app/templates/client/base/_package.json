@@ -23,7 +23,7 @@
     "jspm": "^0.15.6",
     "jspm-git": "^0.3.2",
     "babel-eslint": "^3.1.7",
-    "jest-cli": "^0.4.5",
+    "jest-cli": "^0.5.10",
     "babel-jest": "*",
     "babel-core": "^5.0.12",
     "eslint": "^0.20.0",
